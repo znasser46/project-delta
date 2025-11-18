@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    const clickCounter = 0;
 //connects the left value slider to the left values box 
 const leftSlider = document.getElementById('leftSlider');
 const leftInput = document.getElementById('leftSliderInputNum');
@@ -154,5 +155,7 @@ const submitButton = document.querySelector('.submitBtn');
     console.log(`Decisions have been ${closeBtn.value}`)
     
   });
+
+  
 
 });

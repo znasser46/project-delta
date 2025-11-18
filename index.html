@@ -33,9 +33,7 @@
                                 target="_blank">Developer Profile</a>
                         </li>
 
-                        <!-- <li class="nav-item">
-                        <a class="nav-link" href="pages/score.html">Player Info</a>
-                    </li> -->
+
                     </ul>
                 </div>
             </div>
@@ -45,10 +43,12 @@
 
     <main>
         <div class="description">
-        <h1 id="title">Microsoft Word Paragraph formatting text box</h1>
-        <H6>Below is a screenshot of the current version of Microsoft word's paragraph text box and a new prototype to make the tab more efficient.</H6>
-        <h6>This prototype is more efficient because it allows you to navigate the menu with significatly less clicks, due to the expanded options that were turned to buttons and sliders.</h6>
-</div>
+            <h1 id="title">Microsoft Word Paragraph formatting text box</h1>
+            <H6>Below is a screenshot of the current version of Microsoft word's paragraph text box and a new prototype
+                to make the tab more efficient.</H6>
+            <h6>This prototype is more efficient because it allows you to navigate the menu with significatly less
+                clicks, due to the expanded options that were turned to buttons and sliders.</h6>
+        </div>
         <div class="cardset" id="uiVariations">
             <div class="card" id="oldUi">
                 <h1>Original</h1>
@@ -115,12 +115,14 @@
                                 <input type="range" class="form-range" min="0" max="20" step="0.2" id="leftSlider"
                                     value="0">
                                 <input type="number" id="leftSliderInputNum" min="0" max="20" step="0.2" value="0">
+                                <label for="leftSliderInputNum"></label>
                                 <br>
 
                                 <label for="rightSlider" class="form-label">Right:</label>
                                 <input type="range" class="form-range" min="0" max="20" step="0.2" id="rightSlider"
                                     value="0">
                                 <input type="number" id="rightSliderInputNum" min="0" max="20" step="0.2" value="0">
+                                <label for="rightSliderInputNum"></label>
                                 <div>
                                     <input type="checkbox" id="indents">
                                     <label for="indents">Mirror Indents</label>
@@ -132,9 +134,10 @@
                                 <button class="btn btn-outline-primary specialBtn">None</button>
                                 <button class="btn btn-outline-primary specialBtn">First Line</button>
                                 <button class="btn btn-outline-primary specialBtn">Hanging</button>
-                                <h1></h1>
+                                
                                 <h6>By:</h6>
                                 <input type="number" id="byNumBox" min="0" max="10" step="0.1" value="0">
+                                <label for="byNumBox"></label>
 
                             </div>
                         </div>
@@ -148,14 +151,20 @@
 
                                 <h6>Before Text:</h6>
                                 <div class="spaced">
-                                    <input type="range" class="form-range" min="0" max="140" step="6" id="beforeSlider" value="0">
+                                    <input type="range" class="form-range" min="0" max="140" step="6" id="beforeSlider"
+                                        value="0">
+                                        <label for="beforeSlider"></label>
                                     <input type="number" id="beforeTextInputNum" min="0" max="140" step="6" value="0">
                                 </div>
+                                <label for="beforeTextInputNum"></label>
 
                                 <h6>After Text:</h6>
                                 <div class="afterSpaced">
-                                    <input type="range" class="form-range" min="0" max="140" step="6" id="afterSlider" value="0">
+                                    <input type="range" class="form-range" min="0" max="140" step="6" id="afterSlider"
+                                        value="0">
+                                        <label for="afterSlider"></label>
                                     <input type="number" id="afterTextInputNum" min="0" max="140" step="6" value="0">
+                                    <label for="afterTextInputNum"></label>
                                 </div>
                             </div>
 
@@ -170,6 +179,7 @@
                                 <br>
                                 <h6>At:</h6>
                                 <input type="number" id="atNumBox" min="0" max="10" step="0.5" value="0">
+                                <label for="atNumBox"></label>
 
 
                             </div>
@@ -192,11 +202,13 @@
 
                         </div>
 
-                        <button class="btn btn-primary submitBtn">Submit</button>
-                        <button class="btn btn-primary restoreBtn">Restore Default</button>
-                        <button class="btn btn-primary cancelBtn">Cancel</button>
+                        <button class="btn btn-outline-primary submitBtn">Submit</button>
+                        <button class="btn btn-outline-primary restoreBtn">Restore Default</button>
+                        <button class="btn btn-outline-primary cancelBtn">Cancel</button>
                     </div>
                 </div>
+            </div>
+            </div>
             </div>
     </main>
 
