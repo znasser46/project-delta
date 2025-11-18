@@ -1,0 +1,111 @@
+.cardset {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    /* gap: 12rem; */
+    justify-content: space-between;
+padding: 5rem;
+
+}
+.description {
+    text-align: center;
+}
+#newUi {
+    max-width: 650px;
+}
+
+h5 {
+    border: darkgray px solid;
+    max-width: 200px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.spaced {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.afterSpaced {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+hr {
+
+    /* border: black 6px solid; */
+    width: auto;
+    padding: 0px;
+    padding-bottom: 2px;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+#previewDivider {
+    width: auto;
+    padding: 0px;
+    padding-bottom: 2px;
+    margin: 0px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.settingsCard {
+    position: relative;
+    border: 10px black solid;
+    background-color: lightgrey;
+}
+
+.settingsCard .closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.standard {
+    align-items: center;
+}
+
+.indents {
+    display: flex;
+    gap: 90px;
+
+}
+
+.spacingBtn {
+    margin: 2px;
+}
+
+
+.form-range {
+    height: 5px;
+    width: 120px;
+}
+
+.spacing {
+    display: flex;
+    gap: 140px;
+
+}
+
+
+
+#previewText {
+    outline: solid 1.5px black;
+    padding: 5px;
+    max-width: 100%;
+
+}

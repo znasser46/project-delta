@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ZN| Improved Interface</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/znasser46/project-delta" target="_blank">Source
+                                Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://znasser46.github.io/znasser46/index.html"
+                                target="_blank">Developer Profile</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                        <a class="nav-link" href="pages/score.html">Player Info</a>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="description">
+        <h1 id="title">Microsoft Word Paragraph formatting text box</h1>
+        <H6>Below is a screenshot of the current version of Microsoft word's paragraph text box and a new prototype to make the tab more efficient.</H6>
+        <h6>This prototype is more efficient because it allows you to navigate the menu with significatly less clicks, due to the expanded options that were turned to buttons and sliders.</h6>
+</div>
+        <div class="cardset" id="uiVariations">
+            <div class="card" id="oldUi">
+                <h1>Original</h1>
+                <div id="screenshot" class="screenshot">
+                    <img src="images/microsoft_word_paragraph_bad_design.png" alt="bad_ui_screenshot">
+                </div>
+
+            </div>
+
+            <div class="card" id="newUi">
+
+                <h1>Prototype</h1>
+                <div class="newTextBox">
+                    <div class="settingsCard">
+                        <h4>Paragraph Styles:</h4>
+                        <button class="closeBtn" value="closed">X</button>
+                        <div class="sectionButtons">
+                            <button class="btn-primary mainSelector">indents and spacing</button>
+                            <button class="btn-primary mainSelector">Line and Page Breaks</button>
+                        </div>
+                        <br>
+
+
+
+                        <h5>General:</h5>
+                        <hr>
+                        <h6>Alignment:</h6>
+                        <div class="alignmentBtns">
+                            <button class="btn btn-outline-primary alignBtn">Left</button>
+                            <button class="btn btn-outline-primary alignBtn">Center</button>
+                            <button class="btn btn-outline-primary alignBtn">Right</button>
+                            <button class="btn btn-outline-primary alignBtn">Justified</button>
+                        </div>
+
+
+
+                        <br>
+                        <h6>Outline Level:</h6>
+                        <div class="outlineLevelBtns">
+                            <button class="btn btn-outline-primary outlineBtn">1</button>
+                            <button class="btn btn-outline-primary outlineBtn">2</button>
+                            <button class="btn btn-outline-primary outlineBtn">3</button>
+                            <button class="btn btn-outline-primary outlineBtn">4</button>
+                            <button class="btn btn-outline-primary outlineBtn">5</button>
+                            <button class="btn btn-outline-primary outlineBtn">6</button>
+                            <button class="btn btn-outline-primary outlineBtn">7</button>
+                            <button class="btn btn-outline-primary outlineBtn">8</button>
+                            <button class="btn btn-outline-primary outlineBtn">9</button>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="collapsed">
+                            <label for="collapsed">Collapsed by default</label>
+                        </div>
+
+                        <br>
+
+                        <h5>Indentation:</h5>
+                        <hr>
+                        <div class="indents">
+
+                            <div class="standard">
+
+                                <label for="leftSlider" class="form-label">Left: </label>
+                                <input type="range" class="form-range" min="0" max="20" step="0.2" id="leftSlider"
+                                    value="0">
+                                <input type="number" id="leftSliderInputNum" min="0" max="20" step="0.2" value="0">
+                                <br>
+
+                                <label for="rightSlider" class="form-label">Right:</label>
+                                <input type="range" class="form-range" min="0" max="20" step="0.2" id="rightSlider"
+                                    value="0">
+                                <input type="number" id="rightSliderInputNum" min="0" max="20" step="0.2" value="0">
+                                <div>
+                                    <input type="checkbox" id="indents">
+                                    <label for="indents">Mirror Indents</label>
+                                </div>
+                            </div>
+                            <div class="special">
+
+                                <h6>Special:</h6>
+                                <button class="btn btn-outline-primary specialBtn">None</button>
+                                <button class="btn btn-outline-primary specialBtn">First Line</button>
+                                <button class="btn btn-outline-primary specialBtn">Hanging</button>
+                                <h1></h1>
+                                <h6>By:</h6>
+                                <input type="number" id="byNumBox" min="0" max="10" step="0.1" value="0">
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <h5>Spacing:</h5>
+                        <hr>
+                        <div class="spacing">
+                            <div>
+
+
+                                <h6>Before Text:</h6>
+                                <div class="spaced">
+                                    <input type="range" class="form-range" min="0" max="140" step="6" id="beforeSlider" value="0">
+                                    <input type="number" id="beforeTextInputNum" min="0" max="140" step="6" value="0">
+                                </div>
+
+                                <h6>After Text:</h6>
+                                <div class="afterSpaced">
+                                    <input type="range" class="form-range" min="0" max="140" step="6" id="afterSlider" value="0">
+                                    <input type="number" id="afterTextInputNum" min="0" max="140" step="6" value="0">
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6>Line Spacing:</h6>
+                                <button class="btn btn-outline-primary spacingBtn">Single</button>
+                                <button class="btn btn-outline-primary spacingBtn">1.5 lines</button>
+                                <button class="btn btn-outline-primary spacingBtn">Double</button>
+                                <button class="btn btn-outline-primary spacingBtn">At least</button>
+                                <button class="btn btn-outline-primary spacingBtn">Exactly</button>
+                                <button class="btn btn-outline-primary spacingBtn">Multiple</button>
+                                <br>
+                                <h6>At:</h6>
+                                <input type="number" id="atNumBox" min="0" max="10" step="0.5" value="0">
+
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <input type="checkbox" id="spacingBox">
+                            <label for="spacingBox">Don't add space between paragraphs of the same style</label>
+                        </div>
+
+                        <br>
+                        <div class="preview">
+
+                            <h5>Preview Changes:</h5>
+                            <hr id="previewDivider">
+                            <p id="previewText">Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
+                                Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
+                                Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
+                                Sample Text </p>
+
+                        </div>
+
+                        <button class="btn btn-primary submitBtn">Submit</button>
+                        <button class="btn btn-primary restoreBtn">Restore Default</button>
+                        <button class="btn btn-primary cancelBtn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
