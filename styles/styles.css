@@ -61,6 +61,10 @@ hr {
     background-color: lightgrey;
 }
 
+.hidden {
+    display: none;
+}
+
 .btn {
     background-color: white;
 }
